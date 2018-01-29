@@ -19,8 +19,8 @@ UP = {
 
 
 class Game:
-    def __init__(self):
-        self.screen = pygame.display.set_mode((640, 480))
+    def __init__(self, win_width=640, win_height=480):
+        self.screen = pygame.display.set_mode((win_width, win_height))
         self.tasks = []
         self.scripts = []
         self.objects = pygame.sprite.Group()
